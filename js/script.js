@@ -6,12 +6,22 @@ const container = document.querySelector('.container')
 const shopList = ['pane', 'latte', 'uova', 'tonno', 'riso', 'peperoncino'];
 
 // ciclato col for
-
+/*
 let shopListText = '';
 
 for(let i = 0; i < shopList.length; i++){
     shopListText += `<div>${shopList[i]}</div>`
 }
-
 container.innerHTML = shopListText;
+*/
 
+// ciclo while
+
+let shopListText = '';
+let i = 0;
+
+while(i < shopList.length) {
+    i++
+    shopListText += `<div>${shopList[i - 1]}</div>`
+}
+container.innerHTML = shopListText;
